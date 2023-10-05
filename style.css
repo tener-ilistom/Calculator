@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+.container {
+  height: 650px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.history {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  padding-right: 1rem;
+  font-size: 1rem;
+  color: #a0a0a0;
+}
+.display {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  padding-right: 1rem;
+}
+
+.calc-input {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "clear clear delete divide mod"
+    "seven eight nine multiply sqroot"
+    "four five six minus square"
+    "one two three add powerof"
+    "comma zero zero equals equals";
+  gap: 2px;
+  cursor: pointer;
+}
+
+.clear {
+  grid-area: clear;
+}
+.divide {
+  grid-area: divide;
+}
+.multiply {
+  grid-area: multiply;
+}
+.minus {
+  grid-area: minus;
+}
+.add {
+  grid-area: add;
+}
+.mod {
+  grid-area: mod;
+}
+.sqroot {
+  grid-area: sqroot;
+}
+.square {
+  grid-area: square;
+}
+.powerof {
+  grid-area: powerof;
+}
+.equals {
+  grid-area: equals;
+}
+.nine {
+  grid-area: nine;
+}
+.eight {
+  grid-area: eight;
+}
+.seven {
+  grid-area: seven;
+}
+.six {
+  grid-area: six;
+}
+.five {
+  grid-area: five;
+}
+.four {
+  grid-area: four;
+}
+.three {
+  grid-area: three;
+}
+.two {
+  grid-area: two;
+}
+.one {
+  grid-area: one;
+}
+.zero {
+  grid-area: zero;
+}
+.comma {
+  grid-area: comma;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dedee0;
+  color: #000;
+}
+
+.inputs:hover {
+  background-color: #c8c8c8;
+}
+
+.symbols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5934d;
+}
+
+.symbols:hover {
+  background-color: #e7af77;
+}
